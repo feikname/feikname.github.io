@@ -60,7 +60,7 @@ section .wrapper {
 
 
 section .wrapper {
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -68,14 +68,19 @@ img.inline-icon,
 img.inline-icon-big {
     height: 16px;
     vertical-align: middle;
+    position: relative;
+    top: -2px;
 }
-img.inline-icon-big {
+img.inline-whatsapp-icon {
     height: 24px;
-    vertical-align: top;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
 }
 
 section {
     padding: 24px 0;
+    
 }
 
 section h2 {
@@ -136,8 +141,7 @@ footer {
     }
     section h2 {
         margin-bottom: 3px;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center;
     }
 	section .wrapper,
     footer .wrapper {
