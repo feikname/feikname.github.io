@@ -23,6 +23,7 @@ header {
     padding: 16px 0;
     background-color: royalblue;
     color: #ecf0f1;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
 header nav li {
@@ -45,6 +46,10 @@ header nav li a, header nav li a:visited {
     color: #ecf0f1;   
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 .wrapper {
     max-width: 800px;
     width: 100%;
@@ -55,14 +60,17 @@ header .wrapper,
 section .wrapper {
     display: flex;
     align-items: center;
+    justify-content: start;
+}
+section .wrapper.img-on-the-right {
     justify-content: space-between;
 }
 
-
+/*
 section .wrapper {
-    align-items: center;
+    align-items: flex-start;
 }
-
+ */
 
 img.inline-icon,
 img.inline-icon-big {
@@ -71,11 +79,8 @@ img.inline-icon-big {
     position: relative;
     top: -2px;
 }
-img.inline-whatsapp-icon {
+img.inline-icon-big {
     height: 24px;
-    vertical-align: middle;
-    position: relative;
-    top: -1px;
 }
 
 section {
@@ -100,7 +105,15 @@ section {
 
 section .wrapper .main-image-left,
 section .wrapper .main-image-right {
-    height: 200px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+section#foss .wrapper > img {
+    height: 350px;
+}
+section#instituto .wrapper > img {
+    height: 350px;
 }
 
 section .wrapper .main-image-left {
