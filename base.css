@@ -28,7 +28,7 @@ header {
 header .wrapper {
 	display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 header nav li {
