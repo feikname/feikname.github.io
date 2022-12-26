@@ -198,4 +198,8 @@ footer {
     header nav li:first-child {
         margin-left: 0;
     }
+    section#foss .wrapper > img {
+        max-width: 80%;
+        margin-top: 12px; /* devido ao ul anterior não apresentar margem alguma */
+    }
 }
