@@ -18,6 +18,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a, a:visited {
+    text-decoration: none;
+    color: rgb(33, 155, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header {
     padding: 16px 0;
     background-color: royalblue;
@@ -38,16 +47,9 @@ header nav li {
     font-weight: bold;
 }
 
-a, a:visited {
-    text-decoration: none;
-    color: rgb(33, 155, 255);
-}
 
-a:hover {
-    text-decoration: underline;
-}
-
-header nav li a, header nav li a:visited {
+header nav li a, header nav li a:visited,
+header h1 a, header h1 a:visited {
     color: #ecf0f1;   
 }
 
