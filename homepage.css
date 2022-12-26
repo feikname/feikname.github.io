@@ -1,14 +1,6 @@
 section .wrapper .main-image-left,
 section .wrapper .main-image-right {
-    height: 250px;
     border-radius: 5%;
-}
-
-section#foss .wrapper > img {
-    height: 350px;
-}
-section#instituto .wrapper > img {
-    height: 350px;
 }
 
 section p {
@@ -38,6 +30,10 @@ section .wrapper {
 }
  */
 
+section .wrapper .main-image-left,
+section .wrapper .main-image-right {
+	object-fit: contain;
+}
 
 section .wrapper .main-image-left {
     margin-right: 32px;
