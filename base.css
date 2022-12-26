@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Roboto&display=swap');
+
+body {
+    background-color: rgb(255, 245, 245);
+}
+
+header {
+	font-family: 'Gemunu Libre', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: royalblue;
+    color: #ecf0f1;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+header .wrapper {
+	display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(33, 155, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header nav li a, header nav li a:visited {
+    color: #ecf0f1;   
+}
+
+/* Hack for displaying links with inline image without being "word breaked" in
+ the middle */ 
+.inline-block {
+    display: inline-block;
+}
+
+.wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+img.inline-icon,
+img.inline-icon-big {
+    height: 16px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+img.inline-icon-big {
+    height: 24px;
+}
+
+section {
+    padding: 24px 0;
+}
+
+
+section {
+    color: black;
+}
+
+
+footer {
+    background-color: royalblue;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+
+@media screen and (max-width: 640px) {
+    a {
+        text-decoration: underline;
+    }
+    .wrapper {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    footer .wrapper,
+	header .wrapper {
+        display: block;
+        text-align: center;
+    }
+    
+    header .wrapper h1 {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    header nav {
+        text-align: center;
+    }
+    header nav li:first-child {
+        margin-left: 0;
+    }
+
+}
